@@ -1,3 +1,4 @@
+import { DashBoard } from "./DashBoard/DashBoard"
 import { ProductBoard } from "./productBoard/ProductBoard"
 
 
@@ -5,7 +6,10 @@ function App() {
 
   return (
     <>
-   <ProductBoard />
+  <div className="grid grid-cols-2">
+  <DashBoard />
+  <ProductBoard />
+  </div>
      </>
   )
 }

@@ -1,4 +1,5 @@
 
+
 import { ProductCart } from './ProductCart'
 import { SearchBar } from './SearchBar'
 
@@ -7,7 +8,7 @@ export const ProductBoard = () => {
     <>
     <div>
     <SearchBar />
-    <ProductCart />
+   <ProductCart />
     </div>
     </>
   )

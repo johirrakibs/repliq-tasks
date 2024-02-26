@@ -76,28 +76,28 @@ export const productData = [
     },
     {
         id:12,
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpeCYof1bbcGjxuSlatUTp_FWQEMnVAw5qznowzedZv29F93ZkIDstU6CTwcbfckA2NpI&usqp=CAU',
+        img:'https://www.dhresource.com/0x0/f2/albu/g22/M01/4C/18/rBNaEmJXub2ACpRNAABlPZxDr48965.jpg',
         name: "Pure & Black Sleeve",
         price: "$50.00",
         details:"ehrher"
     },
     {
         id:13,
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpeCYof1bbcGjxuSlatUTp_FWQEMnVAw5qznowzedZv29F93ZkIDstU6CTwcbfckA2NpI&usqp=CAU',
+        img:'https://www.dhresource.com/0x0/f2/albu/g22/M01/4C/18/rBNaEmJXub2ACpRNAABlPZxDr48965.jpg',
         name: "Gray With Sleeve",
         price: "$105.50",
         details:"ehrher"
     },
     {
         id:14,
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpeCYof1bbcGjxuSlatUTp_FWQEMnVAw5qznowzedZv29F93ZkIDstU6CTwcbfckA2NpI&usqp=CAU',
+        img:'https://www.dhresource.com/0x0/f2/albu/g22/M01/4C/18/rBNaEmJXub2ACpRNAABlPZxDr48965.jpg',
         name: "Navi Blue",
         price: "$45.50",
         details:"ehrher"
     },
     {
         id:15,
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpeCYof1bbcGjxuSlatUTp_FWQEMnVAw5qznowzedZv29F93ZkIDstU6CTwcbfckA2NpI&usqp=CAU',
+        img:'https://www.dhresource.com/0x0/f2/albu/g22/M01/4C/18/rBNaEmJXub2ACpRNAABlPZxDr48965.jpg',
         name: "Pure & Black Sleeve",
         price: "$50.00",
         details:"ehrher"

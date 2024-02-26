@@ -12,9 +12,9 @@ export const ProductCart = () => {
     product.map((products)=>(
         <div key={products.id} className="bg-red-100 flex flex-col m-10">
        <img className="w-full" src={products.img} alt={product.name} />
-       <p >{products.name}</p>
        <p>{products.price}</p>
-       <p>{products.details}</p>
+       <p >{products.name}</p>
+
         </div>
       
 

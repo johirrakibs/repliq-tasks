@@ -1,5 +1,3 @@
-
-
 import { ProductCart } from './ProductCart'
 import { SearchBar } from './SearchBar'
 

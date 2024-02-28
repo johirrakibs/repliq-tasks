@@ -6,8 +6,14 @@ export default {
       colors: {
         ash: "#e7e9f6",
         ash1:"#eef0f9",
-        blue:"#5c6ac4",
-        red:"#fadedd"
+        blue:"#d7e3f7",
+        blue1:"#3775d9",
+        red:"#fadedd",
+        red1:"#e55e5a",
+        ash2:"#5d6bc4",
+        ash3:"#dee1f3",
+        ash4:"#5f6cc5"
+        
       },
     },
   },

@@ -1,16 +1,21 @@
-import { DashBoard } from "./DashBoard/DashBoard";
-import { ProductBoard } from "./productBoard/ProductBoard";
+import { DashBoard } from './DashBoard/DashBoard';
+import { ProductBoard } from './productBoard/ProductBoard';
+
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 function App() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <DashBoard className="md:order-2" />
+      <Provider store={store}>
+        <div className='grid grid-cols-1 md:grid-cols-2'>
+          <DashBoard className='md:order-2' />
 
-        <div className="border-2 border-gray-300 md:order-1">
-          <ProductBoard />
+          <div className='border-2 border-gray-300 md:order-1'>
+            <ProductBoard />
+          </div>
         </div>
-      </div>
+      </Provider>
     </>
   );
 }

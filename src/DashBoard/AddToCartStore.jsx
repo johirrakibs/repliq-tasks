@@ -1,7 +1,7 @@
 import { FaRegEdit } from "react-icons/fa";
 import { IoMdAddCircle } from "react-icons/io";
 import { RiIndeterminateCircleFill, RiDeleteBin6Fill } from "react-icons/ri";
-import {  useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   removeProduct,
   incrementQuantity,

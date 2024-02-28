@@ -16,12 +16,11 @@ export const DashBoard = () => {
   const dispatch = useDispatch();
   return (
     <>
-    
       <div>
         <div className="flex justify-around gap-3 mt-3 mb-4  md:flex md:justify-around md:gap-3 md:mt-3 md:mb-4 lg:flex lg:justify-around">
           <button className="bg-white-300 text-gray-800 font-bold text-2xl px-3 py-2 rounded-md flex items-center justify-center">
             <CiMenuBurger />
-          </button> 
+          </button>
           <Button icon={<SlNote />} name="Note" />
           <Button icon={<MdOutlineLocalShipping />} name="Shipping" />
           <Button icon={<MdAccessAlarm />} name="Hold Orders" />
@@ -64,7 +63,7 @@ export const DashBoard = () => {
 
           <div className="flex justify-between bg-blue-100 bg-teal-100 text-sky-600	 p-4 mx-4 rounded-md">
             <div>
-              <p>Products Count (13)</p>
+              <p>Products Count</p>
             </div>
 
             <div className="flex text-2xl justify-between font-bold">

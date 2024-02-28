@@ -9,7 +9,7 @@ export const productData = [
   {
     id: 2,
     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMx0SX6Qeb9TlG1QZBL5sm_1D299W7mlb1lJKNqm4H55xTPsSXXUz8hgHL-iTc9Sz96Y0&usqp=CAU',
-    name: "Levi's Red Tab Florence",
+    name: "Levi's Red Florence",
     price: 78.34,
     details: 'Hot Collection Stylish and Fashionable Low Top Winter and Summer Exclusive Converse Sneakers for Men - Comfortable and Suitable for All',
   },

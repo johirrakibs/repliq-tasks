@@ -1,24 +1,24 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   products: [],
   totalPrice: 0,
 };
 
-const calculateTotalPrice = products => {
+const calculateTotalPrice = (products) => {
   return products.reduce(
     (total, product) => total + product.price * product.quantity,
-    0,
+    0
   );
 };
 
 export const productSlice = createSlice({
-  name: 'product',
+  name: "product",
   initialState,
   reducers: {
     addProduct: (state, action) => {
       const existingProduct = state.products.find(
-        product => product.id === action.payload.id,
+        (product) => product.id === action.payload.id
       );
       if (existingProduct) {
         existingProduct.quantity += 1;
@@ -29,13 +29,13 @@ export const productSlice = createSlice({
     },
     removeProduct: (state, action) => {
       state.products = state.products.filter(
-        product => product.id !== action.payload,
+        (product) => product.id !== action.payload
       );
       state.totalPrice = calculateTotalPrice(state.products);
     },
     incrementQuantity: (state, action) => {
       const product = state.products.find(
-        product => product.id === action.payload,
+        (product) => product.id === action.payload
       );
       if (product) {
         product.quantity += 1;
@@ -44,7 +44,7 @@ export const productSlice = createSlice({
     },
     decrementQuantity: (state, action) => {
       const product = state.products.find(
-        product => product.id === action.payload,
+        (product) => product.id === action.payload
       );
       if (product && product.quantity > 1) {
         product.quantity -= 1;

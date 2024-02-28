@@ -9,7 +9,7 @@ const CategoryComponent = () => {
 
   return (
     <div className="container mx-6 mb-4">
-      <ul className="flex  gap-4">
+      <ul className="flex flex-col gap-2 md:flex md:flex-row lg:flex  lg:gap-4">
         {clothingCategories.map((category, index) => (
           <li
             key={index}

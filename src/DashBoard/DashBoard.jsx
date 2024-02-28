@@ -17,8 +17,12 @@ export const DashBoard = () => {
   return (
     <>
       <div>
-        <div className="flex gap-3 mb-4">
-          <CiMenuBurger />
+        <div className="flex justify-around gap-3 mt-3 mb-4" >
+          
+        <button className="bg-white-300 text-gray-800 text-3xl px-3 py-2 rounded-md flex items-center justify-center">
+       <CiMenuBurger/>
+       
+      </button>
           <Button icon={<SlNote />} name="Note" />
           <Button icon={<MdOutlineLocalShipping />} name="Shipping" />
           <Button icon={<MdAccessAlarm />} name="Hold" />

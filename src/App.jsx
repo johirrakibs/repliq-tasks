@@ -8,7 +8,11 @@ function App() {
     <>
   <div className="grid grid-cols-2">
   <DashBoard />
-  <ProductBoard />
+
+  <div className="border-2 border-cyan-600">
+   <ProductBoard />
+  </div>
+ 
   </div>
      </>
   )

@@ -5,6 +5,9 @@ export default {
     extend: {
       colors: {
         ash: "#e7e9f6",
+        ash1:"#eef0f9",
+        blue:"#5c6ac4",
+        red:"#fadedd"
       },
     },
   },

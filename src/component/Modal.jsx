@@ -1,18 +1,33 @@
+import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../store/productSlice";
 
 export default function Modal({ product, onClose }) {
   const dispatch = useDispatch();
+  const modalRef = useRef(null);
 
   const handleAddProduct = (newProduct) => {
-  
     dispatch(addProduct(newProduct));
   };
+
+  // Close the modal when clicking outside of the content
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [onClose]);
 
   return (
     <>
       <div className="justify-center rounded-lg items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-        <div className="relative w-72 my-6 mx-auto max-w-3xl rounded-lg">
+        <div ref={modalRef} className="relative w-72 my-6 mx-auto max-w-3xl rounded-lg">
           <div className="justify-center items-center flex flex-col w-full bg-white outline-none focus:outline-none">
             <img
               src={product?.img}
@@ -47,7 +62,7 @@ export default function Modal({ product, onClose }) {
           </div>
         </div>
       </div>
-      <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+      <div className="opacity-25 fixed inset-0 z-40 bg-black" onClick={onClose}></div>
     </>
   );
 }
